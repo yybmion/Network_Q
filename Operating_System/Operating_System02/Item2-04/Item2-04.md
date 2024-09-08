@@ -45,29 +45,7 @@
 
 📌 **요약**: 문맥 교환은 한 프로세스에서 다른 프로세스로 CPU 제어권을 넘기는 과정이다. 현재 프로세스의 상태를 저장하고 다음 프로세스의 상태를 복원한다. 멀티태스킹을 가능하게 하지만 오버헤드가 발생하므로 최적화가 중요하다. 인터럽트, 시간 할당량 만료, I/O 요청 등의 상황에서 발생하며, 효율적인 관리가 시스템 성능에 큰 영향을 미친다.
 
+![img.png](문맥교환.png)
 
-
-```tsx
-import React from 'react';
-
-const ContextSwitchTimeline = () => (
-  <div className="flex flex-col space-y-4">
-    <div className="flex items-center space-x-2">
-      <div className="w-32 h-8 bg-blue-500 text-white flex items-center justify-center">프로세스 A 실행</div>
-      <div className="w-24 h-8 bg-red-500 text-white flex items-center justify-center text-sm">상태 저장</div>
-      <div className="w-32 h-8 bg-yellow-500 text-white flex items-center justify-center text-sm">캐시/TLB 갱신</div>
-      <div className="w-24 h-8 bg-green-500 text-white flex items-center justify-center text-sm">상태 복원</div>
-      <div className="w-32 h-8 bg-purple-500 text-white flex items-center justify-center">프로세스 B 실행</div>
-    </div>
-    <div className="flex items-center space-x-2">
-      <div className="w-32 h-4"></div>
-      <div className="w-80 h-4 bg-gray-300 flex items-center justify-center text-xs">문맥 교환 오버헤드</div>
-    </div>
-  </div>
-);
-
-export default ContextSwitchTimeline;
-
-```
 
 이 다이어그램은 문맥 교환의 과정과 그로 인한 오버헤드를 타임라인 형식으로 보여줍니다. 프로세스 A의 실행이 중단되고, 그 상태가 저장됩니다. 그 다음 캐시와 TLB가 갱신되고, 프로세스 B의 상태가 복원됩니다. 마지막으로 프로세스 B가 실행됩니다. 상태 저장부터 상태 복원까지의 과정이 문맥 교환 오버헤드를 나타냅니다. 이 시각자료를 통해 문맥 교환의 과정과 그로 인한 시스템 부하를 더 명확히 설명할 수 있습니다.
