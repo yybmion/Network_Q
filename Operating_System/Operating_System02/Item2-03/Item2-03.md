@@ -46,40 +46,7 @@
 ___
 ### 보충정리
 
-```tsx
-import React from 'react';
+![img.png](프로세스_문맥.png)
 
-const ContextSwitchDiagram = () => (
-  <div className="flex flex-col items-center space-y-4">
-    <div className="flex space-x-8">
-      <div className="w-40 h-40 bg-blue-200 rounded-lg flex flex-col items-center justify-center">
-        <div className="font-bold">프로세스 A</div>
-        <div>실행 중</div>
-      </div>
-      <div className="w-40 h-40 bg-gray-200 rounded-lg flex flex-col items-center justify-center">
-        <div className="font-bold">프로세스 B</div>
-        <div>대기 중</div>
-      </div>
-    </div>
-    <div className="w-0 h-0 border-l-[20px] border-l-transparent border-t-[20px] border-t-black border-r-[20px] border-r-transparent"></div>
-    <div className="flex items-center justify-center w-80 h-16 bg-green-200 rounded-lg">
-      <div className="font-bold">문맥 교환</div>
-    </div>
-    <div className="w-0 h-0 border-l-[20px] border-l-transparent border-t-[20px] border-t-black border-r-[20px] border-r-transparent"></div>
-    <div className="flex space-x-8">
-      <div className="w-40 h-40 bg-gray-200 rounded-lg flex flex-col items-center justify-center">
-        <div className="font-bold">프로세스 A</div>
-        <div>대기 중</div>
-      </div>
-      <div className="w-40 h-40 bg-blue-200 rounded-lg flex flex-col items-center justify-center">
-        <div className="font-bold">프로세스 B</div>
-        <div>실행 중</div>
-      </div>
-    </div>
-  </div>
-);
-
-export default ContextSwitchDiagram;
-```
 
 이 다이어그램은 프로세스 문맥 교환의 기본 과정을 보여줍니다. 처음에는 프로세스 A가 실행 중이고 프로세스 B가 대기 중입니다. 문맥 교환이 발생하면 프로세스 A의 상태가 저장되고 프로세스 B의 상태가 로드됩니다. 그 결과, 프로세스 B가 실행 중이 되고 프로세스 A는 대기 상태가 됩니다. 이 시각자료를 통해 프로세스 문맥 교환의 개념을 더 명확히 설명할 수 있습니다.
