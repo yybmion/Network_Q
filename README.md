@@ -13,13 +13,13 @@
 ## 구성
 
 1. **데이터베이스**
-[[Database_Q.md]] 참고
+<<Database_Q.md>> 참고
 
 2. **운영체제**
-[[OperatingSystem_Q.md]] 참고
+<<OperatingSystem_Q.md>> 참고
 
 3. **네트워크**
-[[Network_Q.md]] 참고
+<<Network_Q.md>> 참고
 
 ## 사용 방법
 
