@@ -13,13 +13,13 @@
 ## 구성
 
 1. **데이터베이스**
-<<Database_Q.md>> 참고
+[데이터베이스 목차](https://github.com/yybmion/Tech-Interview/blob/main/Database_Q.md)
 
 2. **운영체제**
-<<OperatingSystem_Q.md>> 참고
+[운영체제 목차](https://github.com/yybmion/Tech-Interview/blob/main/Network_Q.md)
 
 3. **네트워크**
-<<Network_Q.md>> 참고
+[네트워크 목차](https://github.com/yybmion/Tech-Interview/blob/main/OperatingSystem_Q.md)
 
 ## 사용 방법
 
